@@ -86,3 +86,9 @@ h1 {
 .landscape {
     --grid-size: 70vw;
 }
+
+.clear {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

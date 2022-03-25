@@ -1,3 +1,5 @@
+const clear = document.querySelector('.clear')
+
 const shuffleArray = (array) =>
 {
     for (let i = array.length - 1; i > 0; i--)
@@ -33,6 +35,16 @@ finalPhrases(phrases,25).forEach(element => {
         createDiv.classList.toggle('check');
     })
 });
+
+const clearCheckBox = () =>
+{
+    var casesChecked = document.querySelectorAll('.check');
+    for(i = casesChecked.length -1 ; i >= 0; i --) {
+        casesChecked[i].classList.remove('check');
+    }
+}
+
+clear.addEventListener('click', clearCheckBox)
 
 
 function getDimension() {
