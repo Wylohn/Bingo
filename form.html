@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BingoLoL - Formulaire</title>
+</head>
+<body>
+    <form action="" method="get" class="form_propositions">
+        <div>
+            <label for="game">Choissez votre jeu :</label>
+            <select id="game" name="game" required>
+                <option value="LoL">League of Legends</option>
+                <option value="Valo">Valorant</option>
+                <option value="RL">Rocket League</option>
+                <option value="Custom">Personnalisé</option>
+            </select>
+        </div>
+        <div>
+            <label for="proposition">Entrez votre phrase :</label>
+            <input type="text" name="proposition" id="proposition" required>
+        </div>
+        <div class="button" id="submit">
+            <input type="submit" value="Done !">
+        </div>
+    </form>
+
+    <div class="container_new_propositions"></div>
+</body>
+
+<script src="./js/form.js"></script>
+
+</html>

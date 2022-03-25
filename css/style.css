@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+
+:root {
+    --grid-size: 80vh;
+}
+
+
+.containAll {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 10px 0;
+    /* background-image: url("../img/zyra_BG.jpg");
+    background-size: cover; */
+    background-color: #121213;
+    color: white;
+    font-family: 'Slabo 27px', serif;
+    font-size: 22px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+    
+}
+
+
+#grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(5, 20%);
+    gap: 10px;
+    height: var(--grid-size);
+    width: var(--grid-size);
+    text-align: center;
+}
+
+.case {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid grey 2px;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-user-select: none; 
+    -webkit-touch-callout: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+    
+}
+
+.case::before {
+    content: '';
+    position: absolute;
+    height: calc(var(--grid-size)/5);
+    width: calc(var(--grid-size)/5);
+    transition: all 0.5s ease-in-out;
+    background-image: url("../img/check.png");
+    background-size: cover;
+    opacity: 0;
+    z-index: -1;
+
+
+}
+
+.check::before {
+    opacity: 1;
+}
+
+.landscape {
+    --grid-size: 70vw;
+}
