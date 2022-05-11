@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BingoLoL - Home</title>
+    <!-- Css link -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <ul class="games"></ul>
+    </header>
+    <main class="containAll">
+        <h1>BingoLoL</h1>
+
+        <form action="" method="get" class="form_home">
+            <div>
+                <label for="game">Choissez votre jeu :</label>
+                <select id="game" name="game" required>
+                    <option value="LoL">League of Legends</option>
+                    <option value="Valo">Valorant</option>
+                    <option value="RL">Rocket League</option>
+                    <option value="Custom">Personnalisé</option>
+                </select>
+            </div>
+        </form>
+    </main>
+    <button class="load">BINGO !</button>
+
+    <!-- JavaScript -->
+	<script src="js/phrases.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

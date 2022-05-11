@@ -87,7 +87,7 @@ h1 {
     --grid-size: 70vw;
 }
 
-.clear {
+.clear, .load {
     position: absolute;
     bottom: 0;
     right: 0;
